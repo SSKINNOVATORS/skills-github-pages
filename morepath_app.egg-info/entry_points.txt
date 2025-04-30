@@ -1,0 +1,2 @@
+[console_scripts]
+morepath_app-start = morepath_app.run:run
