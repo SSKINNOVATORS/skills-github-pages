@@ -35,16 +35,6 @@ class DocumentCollection:
         self.db_session.flush()
         return instance
 
-    # def query(self):
-    #     return self.db_session.query(Document)
-    #
-    # def add(self, title, content):
-    #     session = self.db_session
-    #     document = Document(title=title, content=content)
-    #     session.add(document)
-    #     session.flush()
-    #     return document
-
 class Root:
     pass
 
