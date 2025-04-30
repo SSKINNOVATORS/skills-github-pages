@@ -1,5 +1,5 @@
 from morepath_app.app import App
-from morepath_app.model import Document, Root,AddDocument,DeleteDocument,SearchDocument
+from morepath_app.model import Document, Root,AddDocument,DeleteDocument,SearchDocument,UpdateDocument
 
 
 @App.path(model=Root, path="/")
@@ -20,3 +20,8 @@ def add_document(request):
 @App.path(model=DeleteDocument,path="documents/delete")
 def delete_document(request):
     return DeleteDocument(request.db_session,Document)
+
+#http://localhost:5000/documents/update/?id=2
+@App.path(model=UpdateDocument,path="documents/update")
+def update_document(request):
+    return UpdateDocument(request.db_session,Document)

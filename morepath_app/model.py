@@ -54,3 +54,7 @@ class DeleteDocument(DocumentCollection):
 
 class SearchDocument(DocumentCollection):
     pass
+
+class UpdateDocument(DocumentCollection):
+    pass
+
