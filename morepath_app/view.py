@@ -55,7 +55,7 @@ def add_document_view(self, request):
     doc_to_select = self.get_by_id(id)
     if not doc_to_select:
         return {"error": f"Document with id {id} not found"}
-    new_document=self.create(title=title,content=content)
+    new_document=self.update(id,title=title,content=content)
     return {
         "message": "Document added successfully",
         "id": new_document.id,
