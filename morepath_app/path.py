@@ -21,7 +21,7 @@ def add_document(request):
 def delete_document(request):
     return DeleteDocument(request.db_session,Document)
 
-#http://localhost:5000/documents/update/?id=2&?content=ddjddkdj&title=knfkajmgdd
+#http://localhost:5000/documents/update/?id=2&content=ddjddkdj&title=knfkajmgdd
 @App.path(model=UpdateDocument,path="documents/update")
 def update_document(request):
     return UpdateDocument(request.db_session,Document)
