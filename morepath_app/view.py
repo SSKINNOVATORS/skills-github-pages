@@ -48,7 +48,7 @@ def delete_document_view(self, request):
 
 
 @App.json(model=UpdateDocument)
-def add_document_view(self, request):
+def update_document_view(self, request):
     id= get_required_param(request,'id')
     title = get_required_param(request,'title')
     content = get_required_param(request,'content')
